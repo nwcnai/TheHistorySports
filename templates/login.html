@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ titulo }}</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/loginicon.ico') }}" type="image/x-icon">
+  <link rel="stylesheet" href="../static/css/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000|Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900|Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="{{ estilo }}">
+  <header>
+    <img src="../static/img/logo.png" alt="logo" class="logo" width="250px">
+  </header>
+
+  <section class="seclogin">
+      <div class="esquerda-login">
+          <h1 class="titulo">Faça seu login.</h1>
+
+          <form action="/autenticar" method="post">
+              <label class="labelformlogin">Email:</label>
+              <input class="inputlogin" type="email" name="email" id="email" required>
+
+              <label class="labelformlogin">Senha:</label>
+              <input class="inputlogin" type="password" name="senha" id="senha" required>
+
+              <button type="submit" class="btn-entrar">Entrar</button>
+
+          {% if mensagem %}
+              <p class="p-errorlogin">{{ mensagem }}</p>
+          {% endif %}
+
+              <a class="a-semconta" href="/registro">Não possui cadastro? <span class="lightblue">Crie uma conta!</span></a>
+          </form>
+      </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 - InfoSport / ig: @milani_nt</p>
+  </footer>
+</body>
+
+  <script src="https://kit.fontawesome.com/71c60d6887.js" crossorigin="anonymous"></script>
+</html>

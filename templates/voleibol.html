@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ titulo }}</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+  <link rel="stylesheet" href="../static/css/esporte.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000|Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900|Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="{{ estilo }}">
+  <header>
+     <a href="/home/{{ email }}" class="a-voltar"><i class="fa-solid fa-house"></i>Voltar ao home</a>
+
+    <img src="../static/img/logo.png" alt="logo" class="logo" width="250px">
+  </header>
+
+  <section class="card-informacoes">
+      <div class="div-introducao">
+          <h1 class="titulo"><span class="span-seculo"><i class="fa-solid fa-volleyball"></i></span> - Voleibol <span class="span-seculo">(séc. XIX)</span>:</h1>
+        <p class="subtitulo">Surgiu como uma nova atividade que combina elementos de outros jogos e promove a interação social.</p>
+      </div>
+
+      <p class="subtitulo">Origens do Voleibol</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">1. Início: </span>O voleibol foi criado em 1895 por William G. Morgan, um professor de educação física em Holyoke, Massachusetts. O objetivo era desenvolver um jogo que pudesse ser jogado em ambientes fechados, semelhante ao tênis, mas sem o contato físico intenso.</p>
+        <p class="p-historia"><span class="negrito">2. Primeiro jogo: </span>O primeiro jogo oficial de voleibol foi disputado em 7 de julho de 1896, e as regras iniciais incluíam um campo retangular dividido por uma rede.</p>
+      </div>
+
+      <p class="subtitulo">Desenvolvimento das Regras</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">3. Evolução das Regras: </span>Em 1900, o voleibol foi apresentado como um esporte organizado, e em 1916 foram estabelecidas as primeiras regras oficiais pela American National YMCA.</p>
+        <p class="p-historia"><span class="negrito">4. Popularidade Crescente: </span>A partir da década de 1920, o voleibol começou a se espalhar para outros países, sendo reconhecido em competições escolares e universitárias.</p>
+      </div>
+
+      <p class="subtitulo">Profissionalização (décadas de 1940 e 1950)</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">5. Reconhecimento Internacional: </span>O voleibol foi incluído nos Jogos Olímpicos pela primeira vez em 1964, em Tóquio, ganhando visibilidade e atraindo mais praticantes.</p>
+        <p class="p-historia"><span class="negrito">6. Desenvolvimento de Ligas: </span>A Federação Internacional de Voleibol (FIVB) foi fundada em 1947, ajudando a regulamentar o esporte e a organizar competições internacionais.</p>
+      </div>
+
+      <p class="subtitulo">Era Moderna (décadas de 1980 e 1990)</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">7. Voleibol de Praia: </span>O voleibol de praia começou a ganhar popularidade na década de 1970, levando à inclusão desse formato nas Olimpíadas em 1996, em Atlanta.</p>
+        <p class="p-historia"><span class="negrito">8. Profissionalização do Voleibol: </span>Durante os anos 1990, o voleibol se tornou um esporte profissional, com ligas em várias partes do mundo, atraindo patrocinadores e uma base de fãs crescente.</p>
+      </div>
+
+      <p class="subtitulo">Globalização (final do século 20 e início do século 21)</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">9. Crescimento Internacional: </span>O voleibol se espalhou para regiões como Europa, Ásia e América do Sul, com equipes competitivas e campeonatos nacionais estabelecidos.</p>
+        <p class="p-historia"><span class="negrito">10. Impacto Cultural: </span>O voleibol tornou-se um símbolo de união e trabalho em equipe, promovendo valores como cooperação e respeito, além de ser popular em praias e eventos recreativos.</p>
+      </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 - The History of Sports  / ig: @milani_nt</p>
+  </footer>
+</body>
+
+  <script src="https://kit.fontawesome.com/71c60d6887.js" crossorigin="anonymous"></script>
+</html>

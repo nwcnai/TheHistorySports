@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ titulo }}</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+  <link rel="stylesheet" href="../static/css/esporte.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000|Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900|Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="{{ estilo }}">
+  <header>
+    <a href="/home/{{ email }}" class="a-voltar"><i class="fa-solid fa-house"></i>Voltar ao home</a>
+
+    <img src="../static/img/logo.png" alt="logo" class="logo" width="250px">
+  </header>
+
+  <section class="card-informacoes">
+      <div class="div-introducao">
+          <h1 class="titulo"><span class="span-seculo"><i class="fa-regular fa-futbol"></i></span> - Futebol <span class="span-seculo">(séc. XIX)</span>:</h1>
+        <p class="subtitulo">Possui suas evolução a partir de jogos como o Cuju e o Episkyros.</p>
+      </div>
+
+      <p class="subtitulo">Origens do futebol</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">1. Início: </span>O futebol moderno tem suas raízes em jogos antigos praticados em várias culturas, incluindo o "cuju" na China antiga, o "episkyros" na Grécia e o "harpastum" em Roma. Contudo, o desenvolvimento do futebol como o conhecemos hoje começou na Inglaterra no século XIX.</p>
+        <p class="p-historia"><span class="negrito">2. Regras de Cambridge: </span>Em 1848, as Regras de Cambridge foram propostas por estudantes da Universidade de Cambridge, buscando um conjunto unificado de regras para os jogos de futebol que eram praticados nas escolas.</p>
+      </div>
+
+      <p class="subtitulo">Desenvolvimento das Regras</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">3. Fundação da Football Association: </span>Em 1863, a Football Association (FA) foi criada na Inglaterra, estabelecendo as primeiras regras oficiais do futebol e separando o jogo do rugby. Esse evento é considerado o marco oficial do futebol moderno.</p>
+        <p class="p-historia"><span class="negrito">4. Primeiro Jogo Internacional: </span>O primeiro jogo internacional de futebol foi disputado em 1872 entre Escócia e Inglaterra, ajudando a popularizar o esporte além das fronteiras da Inglaterra.</p>
+      </div>
+
+      <p class="subtitulo">Profissionalização (final do século 19 e início do século 20)</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">5. Liga Profissional: </span>A Professional Footballers' Association (PFA) foi formada em 1907, representando os jogadores profissionais e ajudando a formalizar as condições de trabalho e os contratos.</p>
+        <p class="p-historia"><span class="negrito">6. Popularidade Crescente: </span>O futebol rapidamente se tornou o esporte mais popular no Reino Unido, com grandes clubes sendo formados, como Liverpool, Manchester United e Arsenal.</p>
+      </div>
+
+      <p class="subtitulo">Era Moderna (décadas de 1950 e 1960)</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">7. Copa do Mundo: </span>A FIFA (Fédération Internationale de Football Association) organizou a primeira Copa do Mundo em 1930 no Uruguai, estabelecendo o torneio como o principal evento internacional de futebol.</p>
+        <p class="p-historia"><span class="negrito">8. Crescimento Global: </span>A Copa do Mundo cresceu em popularidade ao longo das décadas, com a primeira transmissão televisiva em 1954, aumentando significativamente o alcance do esporte.</p>
+      </div>
+
+      <p class="subtitulo">Globalização (final do século 20 e início do século 21)</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">9. Expansão Internacional: </span>O futebol se tornou um fenômeno global, com ligas profissionais surgindo em todo o mundo e a UEFA Champions League consolidando-se como um dos torneios de clubes mais prestigiados.</p>
+        <p class="p-historia"><span class="negrito">10. Impacto Cultural: </span>O futebol tornou-se parte integrante da cultura global, influenciando moda, música e até mesmo questões sociais. Eventos como a Copa do Mundo e as ligas nacionais atraem milhões de espectadores e são celebrados em todo o mundo.</p>
+      </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 - The History of Sports  / ig: @milani_nt</p>
+  </footer>
+</body>
+
+  <script src="https://kit.fontawesome.com/71c60d6887.js" crossorigin="anonymous"></script>
+</html>

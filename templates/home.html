@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ titulo }}</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+  <link rel="stylesheet" href="../static/css/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000|Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900|Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="{{ estilo }}">
+  <header>
+    <img src="../static/img/logo.png" alt="logo" class="logo" width="250px">
+
+    <a href="/" class="a-voltar"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sair</a>
+    <a href="/editarusuario/{{ email }}" class="a-usuario"><i class="fa-solid fa-signature"></i>{{ nome }} | <i class="fa-solid fa-gear"></i></a>
+  </header>
+
+  <div class="div-introducao">
+    <h1 class="titulo">Venha conhecer a história dos principais esportes:</h1>
+    <p class="subtitulo">Tudo isso apenas aqui, em um único site.</p>
+  </div>
+
+  <section class="section-menu">
+    <p class="p-navegue">Clique e navegue pela nossa biblioteca <i class="fa-solid fa-book-bookmark"></i></p>
+
+    <nav class="nav-menu">
+      <a href="/futebolamericano/{{ email }}"><i class="fa-solid fa-football"></i> Futebol Americano</a>
+      <a href="/futebol/{{ email }}"><i class="fa-regular fa-futbol"></i> Futebol</a>
+      <a href="/basquete/{{ email }}"><i class="fa-solid fa-basketball"></i> Basquete</a>
+      <a href="/voleibol/{{ email }}"><i class="fa-solid fa-volleyball"></i> Voleibol</a>
+    </nav>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 - InfoSport / ig: @milani_nt</p>
+  </footer>
+</body>
+
+  <script src="https://kit.fontawesome.com/71c60d6887.js" crossorigin="anonymous"></script>
+</html>

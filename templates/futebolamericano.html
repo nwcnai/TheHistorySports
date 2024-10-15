@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ titulo }}</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+  <link rel="stylesheet" href="../static/css/esporte.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000|Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900|Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="{{ estilo }}">
+  <header>
+      <a href="/home/{{ email }}" class="a-voltar"><i class="fa-solid fa-house"></i>Voltar ao home</a>
+
+    <img src="../static/img/logo.png" alt="logo" class="logo" width="250px">
+  </header>
+
+  <section class="card-informacoes">
+      <div class="div-introducao">
+          <h1 class="titulo"><span class="span-seculo"><i class="fa-solid fa-football"></i></span> - Futebol americano <span class="span-seculo">(séc. XIX)</span>:</h1>
+        <p class="subtitulo">Possui suas evolução a partir de jogos como o rugby e o futebol associado (soccer).</p>
+      </div>
+
+      <p class="subtitulo">Origens do futebol americano</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">1. Início: </span>O futebol americano começou a se desenvolver nos Estados Unidos nas décadas de 1860 e 1870. Universidades como Harvard, Yale e Princeton jogavam versões de rugby.</p>
+        <p class="p-historia"><span class="negrito">2. Primeiro jogo: </span>O primeiro jogo de futebol americano intercolegial foi disputado em 1869 entre Princeton e Rutgers.</p>
+      </div>
+
+      <p class="subtitulo">Desenvolvimento das Regras</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">3. Walter Camp: </span>Conhecido como o "Pai do Futebol Americano", Camp, um jogador e treinador da Yale, ajudou a formalizar as regras do jogo na década de 1880. Ele introduziu conceitos como o sistema de "downs" e a formação de equipes de 11 jogadores.</p>
+        <p class="p-historia"><span class="negrito">4. Fundação da NCAA: </span>Em 1906, a NCAA (National Collegiate Athletic Association) foi criada para regulamentar o futebol universitário e tornar o jogo mais seguro.</p>
+      </div>
+
+      <p class="subtitulo">Profissionalização (início do século 20)</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">5. Liga Profissional: </span>Em 1920, a American Professional Football Association (APFA) foi formada, que mais tarde se tornou a National Football League (NFL) em 1922.</p>
+        <p class="p-historia"><span class="negrito">6. Popularidade Crescente: </span>Durante a década de 1930, a NFL começou a ganhar popularidade, especialmente com a introdução de transmissões de rádio.</p>
+      </div>
+
+      <p class="subtitulo">Era Moderna (décadas de 1960 e 1970)</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">7. Super Bowl: </span>O primeiro Super Bowl foi realizado em 1967, consolidando o evento como um dos maiores spectacles esportivos do mundo.</p>
+        <p class="p-historia"><span class="negrito">8. Rivalidade com a AFL: </span>A rivalidade entre a NFL e a American Football League (AFL) culminou na fusão das duas ligas em 1970, resultando na NFL moderna.</p>
+      </div>
+
+      <p class="subtitulo">Globalização (final do século 20 e início do século 21)</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">9. Crescimento Internacional: </span>A NFL começou a se expandir globalmente, realizando jogos fora dos Estados Unidos, incluindo no Reino Unido e na Europa.</p>
+        <p class="p-historia"><span class="negrito">10. Impacto Cultural: </span>O futebol americano tornou-se um importante aspecto da cultura americana, especialmente em feriados como o Super Bowl Sunday.</p>
+      </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 - The History of Sports  / ig: @milani_nt</p>
+  </footer>
+</body>
+
+  <script src="https://kit.fontawesome.com/71c60d6887.js" crossorigin="anonymous"></script>
+</html>

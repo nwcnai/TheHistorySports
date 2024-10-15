@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ titulo }}</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+  <link rel="stylesheet" href="../static/css/esporte.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000|Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900|Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="{{ estilo }}">
+  <header>
+    <a href="/home/{{ email }}" class="a-voltar"><i class="fa-solid fa-house"></i>Voltar ao home</a>
+
+    <img src="../static/img/logo.png" alt="logo" class="logo" width="250px">
+  </header>
+
+  <section class="card-informacoes">
+      <div class="div-introducao">
+          <h1 class="titulo"><span class="span-seculo"><i class="fa-solid fa-basketball"></i></span> - Basquete <span class="span-seculo">(séc. XIX)</span>:</h1>
+        <p class="subtitulo">Criado como um novo esporte em resposta à necessidade de atividades físicas durante o inverno.</p>
+      </div>
+
+      <p class="subtitulo">Origens do Basquete</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">1. Início: </span>O basquete foi inventado em 1891 por James Naismith, um professor de educação física na Universidade de Springfield, Massachusetts. A ideia surgiu como uma alternativa para manter os alunos ativos durante os meses de inverno.</p>
+        <p class="p-historia"><span class="negrito">2. Primeiro jogo: </span>O primeiro jogo de basquete foi disputado em 21 de dezembro de 1891, com 13 regras originais que incluíam o uso de uma bola de futebol e caixas de pêssego como cestos.</p>
+      </div>
+
+      <p class="subtitulo">Desenvolvimento das Regras</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">3. Evolução das Regras: </span>Com o crescimento do esporte, as regras foram refinadas. Em 1893, a primeira partida universitária foi realizada, e em 1895, o primeiro jogo profissional foi disputado.</p>
+        <p class="p-historia"><span class="negrito">4. Formação de Ligas: </span>A National Basketball League (NBL) foi formada em 1937, seguida pela Basketball Association of America (BAA) em 1946, que mais tarde se uniu à NBL em 1949 para formar a National Basketball Association (NBA).</p>
+      </div>
+
+      <p class="subtitulo">Profissionalização (décadas de 1940 e 1950)</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">5. Popularidade Crescente: </span>A NBA começou a ganhar popularidade após a Segunda Guerra Mundial, especialmente com a introdução de transmissões ao vivo na televisão, atraindo um público maior.</p>
+        <p class="p-historia"><span class="negrito">6. Estrelas do Basquete: </span>Jogadores como Bill Russell e Wilt Chamberlain se tornaram ícones do esporte, elevando ainda mais seu perfil.</p>
+      </div>
+
+      <p class="subtitulo">Era Moderna (décadas de 1980 e 1990)</p>
+
+      <div class="div-2dados">
+        <p class="p-historia"><span class="negrito">7. A Era de Jordan: </span>Michael Jordan se tornou uma figura global no basquete durante os anos 1990, liderando o Chicago Bulls a seis títulos da NBA e popularizando o esporte mundialmente.</p>
+        <p class="p-historia"><span class="negrito">8. Crescimento Internacional: </span>A NBA começou a se expandir globalmente, com jogos realizados fora dos Estados Unidos e a inclusão de jogadores internacionais nas ligas.</p>
+      </div>
+
+      <p class="subtitulo">Globalização (final do século 20 e início do século 21)</p>
+
+      <div class="div-1dado">
+        <p class="p-historia"><span class="negrito">9. Impacto Cultural: </span>O basquete se tornou um importante aspecto da cultura urbana, influenciando moda, arte e estilo de vida, além de ser um veículo para questões sociais e políticas.</p>
+      </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 - The History of Sports  / ig: @milani_nt</p>
+  </footer>
+</body>
+
+  <script src="https://kit.fontawesome.com/71c60d6887.js" crossorigin="anonymous"></script>
+</html>

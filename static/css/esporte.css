@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  object-fit: contain;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body.futebolamericano {
+  background-image: url('../img/banner-futebolamericano.jpg');
+  background-size: cover;
+}
+
+body.futebol {
+  background-image: url('../img/banner-futebol.jpg');
+  background-size: cover;
+}
+
+body.basquete {
+  background-image: url('../img/banner-basquete.jpg');
+  background-size: cover;
+  background-position-y: 120px;
+}
+
+body.voleibol {
+  background-image: url('../img/banner-voleibol.jpg');
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+
+  background-color: white;
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.a-voltar {
+    text-decoration: none;
+    background-color: mediumpurple;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: "Raleway", sans-serif;
+
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 3%;
+
+    transition: all 0.7s;
+}
+
+.a-voltar:hover {
+    background-color: #6b4da5;
+    transition: all 0.4s;
+}
+
+.div-introducao {
+  text-align: center;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.titulo {
+  font-family: "Inter", sans-serif;
+}
+
+.subtitulo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.p-historia {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+.negrito {
+    font-weight: bold;
+    font-size: 105%;
+}
+
+.card-informacoes {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: rgba(255, 255, 255, 0.67);
+    border-radius: 20px;
+    width: 80%;
+    padding: 25px;
+}
+
+.div-2dados {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #5F1BF2;
+}
+
+.div-1dado {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #5F1BF2;
+}
+
+.span-seculo {
+    color: #5F1BF2;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  text-align: center;
+}
